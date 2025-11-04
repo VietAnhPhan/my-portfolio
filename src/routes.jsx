@@ -1,0 +1,30 @@
+import { createBrowserRouter } from "react-router";
+import App from "./App";
+import Home from "./components/Home/Home";
+import AboutMe from "./components/AboutMe";
+import MyPortfolio from "./components/MyPortfolio";
+
+const sitename = "Viet Anh Developer";
+
+const router = createBrowserRouter([
+  {
+    path: "",
+    element: <App></App>,
+    children: [
+      {
+        path: "/",
+        element: <Home sitename={sitename} />,
+      },
+      {
+        path: "/about-me",
+        element: <AboutMe sitename={sitename} />,
+      },
+      {
+        path: "/my-porfolio",
+        element: <MyPortfolio sitename={sitename} />,
+      },
+    ],
+  },
+]);
+
+export default router;
