@@ -1,26 +1,34 @@
-import profile from "../../../public/IMG_8725.JPG";
+import profile from "/IMG_8725.JPG";
 import { homeData } from "../../data/homeData";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import FeatureProject from "./FeatureProject";
 
 function Home(props) {
   return (
-    <div className="flex justify-between gap-16">
-      <title>{`Homepage | ${props.sitename}`}</title>
-      <div className="flex-1">
-        <img src={profile} className="object-cover w-3xl" alt="My photo" />
-      </div>
-      <div className="flex flex-1 items-end">
-        <div className="flex flex-col">
-          <h1>{homeData.intro.title}</h1>
-          <p>{homeData.intro.body}</p>
-          <div>
-            <LinkedInIcon fontSize="large"></LinkedInIcon>
-            <GitHubIcon fontSize="large"></GitHubIcon>
+    <>
+      <div className="flex justify-between gap-x-20 pt-20">
+        <title>{`Homepage | ${props.sitename}`}</title>
+        <div className="flex-3">
+          <img src={profile} className="object-cover w-[560px] h-[660px]" alt="My photo" />
+        </div>
+        <div className="flex flex-4 items-end">
+          <div className="flex flex-col">
+            <h1 className="text-5xl font-bold">{homeData.intro.title}</h1>
+            <p className="text-xl mt-12">{homeData.intro.body}</p>
+            <div className="mt-12 flex gap-x-3">
+              <a href="https://www.linkedin.com/in/anhphanweb/">
+                <LinkedInIcon fontSize="large"></LinkedInIcon>
+              </a>
+              <a href="https://github.com/vietAnhPhan/">
+                <GitHubIcon fontSize="large"></GitHubIcon>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <FeatureProject></FeatureProject>
+    </>
   );
 }
 

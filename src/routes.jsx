@@ -20,7 +20,7 @@ const router = createBrowserRouter([
         element: <AboutMe sitename={sitename} />,
       },
       {
-        path: "/my-porfolio",
+        path: "/my-portfolio",
         element: <MyPortfolio sitename={sitename} />,
       },
     ],

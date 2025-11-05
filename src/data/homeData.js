@@ -1,11 +1,31 @@
 const homeData = {
   intro: {
-    title: "I'm Timmy, an independent software developer from Ireland.",
-    body: "I run a few of my own software businesses while also helping companies get their own products and ideas off the ground. Read a bit more about me.",
+    title: "My name is Viet Anh, a junior software developer from Viet Nam.",
+    body: "I build web apps with React, Express, NodeJS, Postgres and TailwindCSS. Apart from building applications, I am also interesting in AI development such as AI agents, training models...",
   },
-  project: {
-    title: "Featured Projects",
-  },
+  projects: [
+    {
+      title: "Myinterests",
+      description:
+        "Myinterests is a online space where people share their interests and connect to others that has the same interests and have conversations. This is my personal project.",
+      thumbnail:
+        "https://gsxytqtnlgirrrxhwjvr.supabase.co/storage/v1/object/public/media_materials/myinterests.png",
+    },
+    {
+      title: "WeCharge",
+      description:
+        "Myinterests is a online space where people share their interests and connect to others that has the same interests and have conversations. This is my personal project.",
+      thumbnail:
+        "https://gsxytqtnlgirrrxhwjvr.supabase.co/storage/v1/object/public/media_materials/wecharge.png",
+    },
+    {
+      title: "SeaKaren",
+      description:
+        "Myinterests is a online space where people share their interests and connect to others that has the same interests and have conversations. This is my personal project.",
+      thumbnail:
+        "https://gsxytqtnlgirrrxhwjvr.supabase.co/storage/v1/object/public/media_materials/seakaren.png",
+    },
+  ],
 };
 
 export { homeData };

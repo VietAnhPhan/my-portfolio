@@ -1,8 +1,9 @@
 import "./App.css";
 import { useState } from "react";
-import { Header } from "./header/header.jsx";
 import { AuthContext } from "./Context";
 import { Outlet } from "react-router";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("access_token"));
@@ -13,6 +14,7 @@ function App() {
           <Header />
           <Outlet />
         </div>
+        <Footer />
       </AuthContext>
     </>
   );
