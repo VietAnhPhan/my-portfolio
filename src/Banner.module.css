@@ -22,3 +22,11 @@
     #ddd 100%
   );
 }
+
+.myPortfolioBg {
+  background-image: url(/banners/my-portfolio-banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-attachment: fixed;
+}

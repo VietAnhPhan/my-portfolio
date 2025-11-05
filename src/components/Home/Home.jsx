@@ -7,7 +7,7 @@ import FeatureProject from "./FeatureProject";
 function Home(props) {
   return (
     <>
-      <div className="bg-[#b3b3b3]">
+      <div className="bg-[#b3b3b3] min-h-full">
         <div className="container mx-auto px-24 py-20">
           <div className="flex flex-row-reverse justify-between gap-x-20 ">
             <title>{`Homepage | ${props.sitename}`}</title>
@@ -38,9 +38,9 @@ function Home(props) {
         </div>
       </div>
 
-      <div className="container mx-auto px-24">
-        <FeatureProject></FeatureProject>
-      </div>
+      {/* <div className="container mx-auto px-24"> */}
+      <FeatureProject title="Feature Projects" style="3-cols"></FeatureProject>
+      {/* </div> */}
     </>
   );
 }

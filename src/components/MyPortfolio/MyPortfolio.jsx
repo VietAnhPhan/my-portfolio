@@ -1,9 +1,14 @@
 import Container from "../../Container.module.css";
 import Banner from "../../Banner.module.css";
+import FeatureProject from "../Home/FeatureProject";
+// import bannerBackground from "/my-portfolio-banner.png";
+
 function MyPortfolio() {
   return (
     <>
-      <div className={`${Banner.banner} flex justify-center relative`}>
+      <div
+        className={`${Banner.banner} flex justify-center relative ${Banner.myPortfolioBg}`}
+      >
         <div className={Banner.gradient}></div>
         <div className={`${Container.container} ${Banner.headText} md:w-1/2`}>
           <h2>Latest Projects</h2>
@@ -18,6 +23,7 @@ function MyPortfolio() {
           </p>
         </div>
       </div>
+      <FeatureProject style="2-cols"></FeatureProject>
     </>
   );
 }
