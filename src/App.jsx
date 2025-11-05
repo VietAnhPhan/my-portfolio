@@ -10,10 +10,13 @@ function App() {
   return (
     <>
       <AuthContext value={{ token, setToken }}>
-        <div className="container mx-auto px-24">
-          <Header />
-          <Outlet />
+        <div className="flex justify-center">
+          <div className="container mx-auto px-24 absolute">
+            <Header />
+          </div>
         </div>
+        <Outlet />
+
         <Footer />
       </AuthContext>
     </>

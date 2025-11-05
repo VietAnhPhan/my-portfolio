@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const Header = () => {
   return (
-    <header>
+    <header className="pb-8 py-8">
       <ul className="flex justify-between gap-20">
         <Link className="font-bold text-3xl" to="/">&lt; Viet Anh Phan /&gt; </Link>
 

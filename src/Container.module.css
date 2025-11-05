@@ -1,0 +1,9 @@
+.container {
+  margin: 0 auto;
+  padding-inline: calc(var(--spacing) * 24);
+  position: relative;
+
+  @media (width >=96rem) {
+    max-width: 96rem;
+  }
+}

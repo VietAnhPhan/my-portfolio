@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router";
 import App from "./App";
 import Home from "./components/Home/Home";
 import AboutMe from "./components/AboutMe";
-import MyPortfolio from "./components/MyPortfolio";
+import MyPortfolio from "./components/MyPortfolio/MyPortfolio";
 
 const sitename = "Viet Anh Developer";
 
