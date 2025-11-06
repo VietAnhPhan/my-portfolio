@@ -1,6 +1,6 @@
 import styles from "./header.module.css";
 import { Link } from "react-router";
-import logo from "/logo/vietanh-logo.png";
+import logo from "/logo/vietanh-logo-white-bg.png";
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
           <img src={logo} alt="Viet Anh logo" className={styles.logoImg} />
         </Link>
 
-        <div className="flex gap-x-10 text-2xl text-white">
+        <div className={`flex gap-x-10 text-2xl text-white ${styles.fw300}`}>
           <Link to="/about-me">About me</Link>
           <Link to="/my-portfolio">My Portfolio</Link>
         </div>
