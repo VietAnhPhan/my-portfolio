@@ -74,3 +74,30 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 300 700;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 100 900;
+}
+
+h1 {
+  font-family: "SpaceGrotesk";
+  font-weight: 600;
+}
+
+p, a{
+  font-family: "Inter";
+}
+
+header a{
+  font-weight: 200;
+}

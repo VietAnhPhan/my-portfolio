@@ -1,13 +1,16 @@
-import "./header.css";
+import styles from "./header.module.css";
 import { Link } from "react-router";
+import logo from "/logo/vietanh-logo.png";
 
 const Header = () => {
   return (
     <header className="pb-8 py-8">
-      <ul className="flex justify-between gap-20">
-        <Link className="font-bold text-3xl" to="/">&lt; Viet Anh Phan /&gt; </Link>
+      <ul className="flex justify-between items-center gap-20">
+        <Link className="font-bold text-3xl" to="/">
+          <img src={logo} alt="Viet Anh logo" className={styles.logoImg} />
+        </Link>
 
-        <div className="flex gap-x-10 text-2xl">
+        <div className="flex gap-x-10 text-2xl text-white">
           <Link to="/about-me">About me</Link>
           <Link to="/my-portfolio">My Portfolio</Link>
         </div>

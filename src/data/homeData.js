@@ -1,6 +1,6 @@
 const homeData = {
   intro: {
-    title: "My name is Viet Anh, a junior software developer from Viet Nam.",
+    title: "I am Viet Anh, a junior software developer from Viet Nam.",
     body: "I build web apps with React, Express, NodeJS, Postgres and TailwindCSS. Apart from building applications, I am also interesting in AI development such as AI agents, training models...",
   },
   projects: [
