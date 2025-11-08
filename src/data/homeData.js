@@ -12,6 +12,7 @@ const homeData = {
         "Myinterests is a online space where people share their interests and connect to others that has the same interests and have conversations. This is my personal project.",
       thumbnail:
         "https://gsxytqtnlgirrrxhwjvr.supabase.co/storage/v1/object/public/media_materials/myinterests.png",
+      path: "/my-portfolio/myinterests",
     },
     {
       title: "WeCharge",
@@ -19,6 +20,7 @@ const homeData = {
         "Myinterests is a online space where people share their interests and connect to others that has the same interests and have conversations. This is my personal project.",
       thumbnail:
         "https://gsxytqtnlgirrrxhwjvr.supabase.co/storage/v1/object/public/media_materials/wecharge.png",
+      path: "/my-portfolio/wecharge",
     },
     {
       title: "SeaKaren",
@@ -26,6 +28,7 @@ const homeData = {
         "Myinterests is a online space where people share their interests and connect to others that has the same interests and have conversations. This is my personal project.",
       thumbnail:
         "https://gsxytqtnlgirrrxhwjvr.supabase.co/storage/v1/object/public/media_materials/seakaren.png",
+        path: "/my-portfolio/seakaren",
     },
   ],
 };

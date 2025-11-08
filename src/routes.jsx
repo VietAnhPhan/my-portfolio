@@ -24,10 +24,10 @@ const router = createBrowserRouter([
         path: "my-portfolio",
         // element: <MyPortfolio sitename={sitename} />,
         children: [
-          { index: true, Component: MyPortfolio },
+          { index: true, element: <MyPortfolio sitename={sitename} /> },
           {
             path: ":project",
-            Component: Project,
+            element: <Project sitename={sitename} />,
           },
         ],
       },

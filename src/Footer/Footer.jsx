@@ -5,7 +5,7 @@ import styles from "../Header/header.module.css";
 function Footer() {
   return (
     <>
-      <div className="container mx-auto px-24">
+      <footer className="container mx-auto px-24 sm:mt-14">
         <div className="py-16 border-t-1 border-t-gray-950">
           <div className="">
             <div className="flex gap-x-36 ">
@@ -18,7 +18,7 @@ function Footer() {
                   />
                 </a>
                 <p className="text-xl mt-3">
-                  A full-stack web develper from South of Vietnam.
+                  A full-stack web developer from South of Vietnam.
                 </p>
               </div>
               <div className="">
@@ -37,7 +37,7 @@ function Footer() {
             <p>Built with React and TailwindCSS.</p>
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 }

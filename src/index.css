@@ -15,7 +15,7 @@
 }
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
   font-weight: 400;
 
@@ -44,7 +44,7 @@ body {
   place-items: center; */
   min-width: 320px;
   min-height: 100vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 h1 {
@@ -94,7 +94,7 @@ h1 {
   font-weight: 600;
 }
 
-p, a{
+p, a, li{
   font-family: "Inter";
 }
 

@@ -1,0 +1,24 @@
+.project h2,
+h3 {
+  font-weight: 500;
+}
+
+.project h2 {
+  font-size: var(--text-3xl);
+}
+.project h3 {
+  font-size: var(--text-2xl);
+}
+
+.project p,
+li {
+  font-weight: 300;
+}
+
+.project p {
+  margin-top: calc(var(--spacing) * 6);
+}
+
+.project h3 {
+  margin-top: calc(var(--spacing) * 12);
+}
