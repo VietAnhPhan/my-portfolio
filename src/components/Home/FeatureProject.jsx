@@ -10,7 +10,7 @@ function FeatureProject(props) {
         <div className={wordBackground.wordBackground}>Projects</div>
         {props.title && <h2 className="text-5xl">{props.title}</h2>}
         {props.style === "3-cols" && (
-          <ul className="flex gap-x-12 pt-20">
+          <ul className="flex flex-col gap-y-10 lg:flex-row lg:gap-x-12 pt-20">
             {homeData.projects.map((project, i) => (
               <li key={i} className="flex flex-col gap-y-3">
                 <Link to={project.path}>
@@ -21,7 +21,7 @@ function FeatureProject(props) {
                       alt={`${project.title} + thumbnail`}
                     />
                   </div>
-                  <h3 className="font-bold text-2xl pt-3">{project.title}</h3>
+                  <h3 className="font-bold text-2xl pt-8">{project.title}</h3>
                   <p className="text-lg">{project.description}</p>
                 </Link>
               </li>

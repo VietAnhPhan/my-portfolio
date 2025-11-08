@@ -5,10 +5,10 @@ import styles from "../Header/header.module.css";
 function Footer() {
   return (
     <>
-      <footer className="container mx-auto px-24 sm:mt-14">
+      <footer className="container mx-auto px-8 sm:mt-14">
         <div className="py-16 border-t-1 border-t-gray-950">
           <div className="">
-            <div className="flex gap-x-36 ">
+            <div className="lg:flex gap-x-36 ">
               <div className="">
                 <a href="/">
                   <img

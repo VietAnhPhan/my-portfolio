@@ -1,12 +1,9 @@
 @import "tailwindcss";
 
 .logoImg {
-  object-fit: cover;
-  object-position: -43px;
   width: 300px;
-  height: 65px;
 }
 
-.fw300{
+.fw300 {
   font-weight: 300;
 }

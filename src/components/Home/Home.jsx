@@ -9,25 +9,25 @@ function Home(props) {
   return (
     <>
       <div
-        className={`bg-[#b3b3b3] min-h-full ${styles.profileImage} flex items-end`}
+        className={`bg-[#b3b3b3] min-h-[500px] lg:min-h-screen ${styles.profileImage} flex items-end`}
       >
-        <div className="container mx-auto px-24 py-20">
-          <div className="grid grid-cols-2 gap-x-20 ">
+        <div className="container mx-auto lg:py-20">
+          <div className="md:grid md:grid-cols-3 gap-x-20 ">
             <title>{`${props.sitename}`}</title>
-            <div className="col-start-1 flex items-end">
-              <div className="flex flex-col text-right">
-                <h1 className="text-8xl font-bold text-white">
+            <div className="col-span-2 flex items-end">
+              <div className="flex flex-col px-8 py-8 text-left lg:text-right">
+                <h1 className="text-3xl lg:text-8xl font-bold text-white">
                   {homeData.intro.title1}
                 </h1>
-                <p className="text-5xl text-white font-light">
+                <p className="lg:text-5xl text-white font-light">
                   {homeData.intro.title2}
                 </p>
-                <p className="text-5xl text-white font-light">
+                <p className="lg:text-5xl text-white font-light">
                   {homeData.intro.title3}
                 </p>
 
-                <p className="text-xl mt-12">{homeData.intro.body}</p>
-                <div className="mt-12 flex justify-end gap-x-3">
+                <p className="lg:text-xl lg:mt-12">{homeData.intro.body}</p>
+                <div className="lg:mt-12 flex justify-end gap-x-3">
                   <a href="https://www.linkedin.com/in/anhphanweb/">
                     <LinkedInIcon fontSize="large"></LinkedInIcon>
                   </a>
