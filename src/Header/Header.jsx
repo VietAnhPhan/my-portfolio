@@ -45,7 +45,7 @@ const Header = () => {
 
   return (
     <header
-      className="flex flex-col lg:justify-center absolute min-w-full"
+      className="flex flex-col lg:justify-center absolute min-w-full z-10"
       ref={header}
     >
       <div className="container mx-auto px-8 lg:px-24 pb-8 py-8">

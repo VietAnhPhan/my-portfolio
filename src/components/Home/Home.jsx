@@ -3,13 +3,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FeatureProject from "../FeatureProject";
 
-import styles from "./Home.module.css";
+import styles from "../../Hero.module.css";
 
 function Home(props) {
   return (
     <>
       <div
-        className={`bg-[#b3b3b3] min-h-[500px] lg:min-h-screen ${styles.profileImage} flex items-end`}
+        className={`${styles.background} flex items-end`}
       >
         <div className="container mx-auto lg:py-20">
           <div className="md:grid md:grid-cols-3 gap-x-20 ">
