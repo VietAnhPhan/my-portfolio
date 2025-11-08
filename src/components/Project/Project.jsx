@@ -1,10 +1,9 @@
 import Markdown from "react-markdown";
 import { useParams } from "react-router";
-import Container from "../../Container.module.css";
-import Banner from "../../Banner.module.css";
-import projects from "../../data/projectData";
 import { useEffect, useState } from "react";
-import styles from "../Project/Project.module.css";
+import styles from "./../../Content.module.css";
+import Banner from "../Banner";
+import projects from "../../data/projectData";
 
 function Project(prop) {
   const { project } = useParams();
@@ -20,7 +19,7 @@ function Project(prop) {
   return (
     <>
       <title>{`${projectData.name} | ${prop.sitename}`}</title>
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <div className={`${Container.container} ${Banner.headText} md:w-1/2`}>
           <h2>Latest Projects</h2>
           <h1 className={Banner.heading1}>{projectData.name}</h1>
@@ -36,8 +35,17 @@ function Project(prop) {
         className={`${Banner.banner} flex justify-center relative ${Banner.myPortfolioBg}`}
       >
         <div className={Banner.gradient}></div>
-      </div>
-      <div className={`mx-auto max-w-2xl ${styles.project} mt-8 sm:mt-20`}>
+      </div> */}
+      <Banner
+        title={projectData.name}
+        subtitle={projectData.headline}
+        list={projectData.responsibilities}
+        background="portfolio"
+        height={100}
+        gradient={true}
+      ></Banner>
+
+      <div className={`mx-auto max-w-2xl ${styles.content} mt-8 sm:mt-20`}>
         <Markdown>{markdownContent}</Markdown>
         <div className="text-center">
           <button className="sm:mt-20">Visit site</button>

@@ -1,4 +1,5 @@
 import styles from "./../Banner.module.css";
+import CheckCircleOutlineOutlinedIcon from "@mui/icons-material/CheckCircleOutlineOutlined";
 
 function Banner(props) {
   return (
@@ -29,6 +30,16 @@ function Banner(props) {
             {props.subtitle && <p className="pt-5">{props.subtitle}</p>}
 
             {props.description && <p className="pt-5">{props.description}</p>}
+
+            {props.list && (
+              <ul className="lg:flex justify-center gap-x-10 pt-5">
+                {props.list.map((responsibility, i) => (
+                  <li key={i} className="flex items-center gap-x-1">
+                    <CheckCircleOutlineOutlinedIcon /> {responsibility}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
       </div>
