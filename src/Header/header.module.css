@@ -1,7 +1,10 @@
 @import "tailwindcss";
 
 .logoImg {
-  width: 300px;
+  max-width: 150px;
+  @media (width>=64rem) {
+    max-width: 250px;
+  }
 }
 
 .fw300 {

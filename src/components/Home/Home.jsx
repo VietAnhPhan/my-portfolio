@@ -1,7 +1,7 @@
 import { homeData } from "../../data/homeData";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import FeatureProject from "./FeatureProject";
+import FeatureProject from "../FeatureProject";
 
 import styles from "./Home.module.css";
 

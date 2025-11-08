@@ -5,7 +5,7 @@ import styles from "../Header/header.module.css";
 function Footer() {
   return (
     <>
-      <footer className="container mx-auto px-8 sm:mt-14">
+      <footer className="container mx-auto lg:px-8 sm:mt-14">
         <div className="py-16 border-t-1 border-t-gray-950">
           <div className="">
             <div className="lg:flex gap-x-36 ">
@@ -34,7 +34,7 @@ function Footer() {
           </div>
           <div className="flex justify-between bg-black text-white px-5 py-3 mt-16">
             <p>&copy; {new Date().getFullYear()} Viet Anh Phan</p>
-            <p>Built with React and TailwindCSS.</p>
+            <p className="text-right">Built with React and TailwindCSS.</p>
           </div>
         </div>
       </footer>

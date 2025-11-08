@@ -1,6 +1,6 @@
 import Container from "../../Container.module.css";
 import Banner from "../../Banner.module.css";
-import FeatureProject from "../Home/FeatureProject";
+import FeatureProject from "../FeatureProject";
 // import bannerBackground from "/my-portfolio-banner.png";
 
 function MyPortfolio() {
