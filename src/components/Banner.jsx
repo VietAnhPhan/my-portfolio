@@ -11,7 +11,7 @@ function Banner(props) {
           props.background == "portfolio"
             ? styles.myPortfolioBg
             : styles.aboutMeBg
-        }`}
+        } ${props.isFixed && styles.fixedBannerImage}`}
       >
         {props.gradient && <div className={styles.gradient}></div>}
 

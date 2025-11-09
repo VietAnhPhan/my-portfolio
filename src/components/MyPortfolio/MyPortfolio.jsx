@@ -34,6 +34,7 @@ function MyPortfolio() {
         background="portfolio"
         height={100}
         gradient={true}
+        isFixed={true}
       ></Banner>
 
       <FeatureProject style="2-cols"></FeatureProject>
