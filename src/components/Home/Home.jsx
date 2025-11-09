@@ -7,6 +7,7 @@ import styles from "../../Hero.module.css";
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import animation from "../../Animation.module.css";
 
 function Home(props) {
   const [init, setInit] = useState(false);
@@ -108,7 +109,7 @@ function Home(props) {
           <div className="md:grid md:grid-cols-3 gap-x-20 ">
             <title>{`${props.sitename}`}</title>
             <div className="col-span-2 flex items-end">
-              <div className="flex flex-col px-8 py-8 text-left lg:text-right">
+              <div className={`flex flex-col px-8 py-8 text-left lg:text-right ${animation.appearUp}`}>
                 <h1 className="text-3xl lg:text-8xl font-bold text-white">
                   {homeData.intro.title1}
                 </h1>

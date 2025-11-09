@@ -11,6 +11,7 @@ const projects = {
       "Postgres",
       "Heroku",
     ],
+    url: "https://www.wecharge.com/app",
   },
   myinterests: {
     name: "Myinterests",
@@ -24,6 +25,7 @@ const projects = {
       "Postgres",
       "Github",
     ],
+    url: "https://myinterests2025.netlify.app/login",
   },
   seakaren: {
     name: "Seakaren",
@@ -37,6 +39,7 @@ const projects = {
       "Postgres",
       "Heroku",
     ],
+    url: "https://www.seakaren.com/en",
   },
 };
 

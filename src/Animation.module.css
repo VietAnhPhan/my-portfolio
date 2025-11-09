@@ -1,0 +1,22 @@
+.moveUp:hover {
+  transform: translateY(-15px);
+  transition: transform 0.5s ease-out;
+}
+
+.appearUp {
+  /* opacity: 0;
+  transform: translateY(10px); */
+  animation: 1s appear-up 1 normal;
+}
+
+@keyframes appear-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 100;
+    transform: translateY(0);
+  }
+}

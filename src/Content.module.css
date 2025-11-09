@@ -13,11 +13,16 @@ li {
   font-weight: 300;
 }
 
-.content p {
+.content p, ul {
   margin-top: calc(var(--spacing) * 6);
 }
 
 .content h3 {
   margin-top: calc(var(--spacing) * 12);
   font-size: var(--text-2xl);
+}
+
+.content ul{
+  list-style: disc;
+  padding-left: 1rem;
 }

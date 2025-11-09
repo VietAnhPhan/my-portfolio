@@ -22,7 +22,7 @@ function Banner(props) {
         >
           <div className={styles.headText}>
             {props.title && (
-              <h2 className="text-4xl lg:text-6xl text-white font-semibold">
+              <h2 className="text-4xl lg:text-6xl text-blue-950 font-semibold">
                 {props.title}
               </h2>
             )}

@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import styles from "./../../Content.module.css";
 import Banner from "../Banner";
 import projects from "../../data/projectData";
+import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
+import WordBackground from "../WordBackground";
 
 function Project(prop) {
   const { project } = useParams();
@@ -45,10 +47,11 @@ function Project(prop) {
         gradient={true}
       ></Banner>
 
-      <div className={`mx-auto max-w-2xl ${styles.content} mt-8 sm:mt-20`}>
+      <div className={`mx-auto max-w-2xl ${styles.content} my-8 sm:mt-20`}>
+        <WordBackground word={projectData.name} />
         <Markdown>{markdownContent}</Markdown>
-        <div className="text-center">
-          <button className="sm:mt-20">Visit site</button>
+        <div className="text-center mt-5">
+          <a href={projectData.url} target="_blank" className="bg-blue-600 px-7 py-3 rounded-full text-white inline-flex mb-12">Visit site <ArrowOutwardOutlinedIcon /></a>
         </div>
       </div>
     </>

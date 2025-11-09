@@ -1,17 +1,18 @@
 import { homeData } from "../data/homeData";
-import wordBackground from "../wordBackground.module.css";
 import { Link } from "react-router";
+import animation from "./../Animation.module.css";
+import WordBackground from "./WordBackground";
 
 function FeatureProject(props) {
   return (
     <>
       <div className={`py-20 container`}>
-        <div className={`${wordBackground.wordBackground} text-9xl lg:text-[270px]`}>Projects</div>
+       <WordBackground word="Projects"/>
         {props.title && <h2 className="text-5xl">{props.title}</h2>}
         {props.style === "3-cols" && (
           <ul className="flex flex-col gap-y-10 lg:flex-row lg:gap-x-12 pt-20">
             {homeData.projects.map((project, i) => (
-              <li key={i} className="flex flex-col gap-y-3">
+              <li key={i} className={`flex flex-col gap-y-3 ${animation.moveUp}`}>
                 <Link to={project.path}>
                   <div className="shadow-gray-300 shadow-xl rounded-xl border border-gray-300 border-b-0">
                     <img
