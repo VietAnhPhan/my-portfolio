@@ -24,6 +24,10 @@ function Particle() {
       //     value: "#0d47a1",
       //   },
       // },
+      fullScreen: {
+        enable: false, // enabling this will make the canvas fill the entire screen, it's enabled by default
+        zIndex: -1, // this is the z-index value used when the fullScreen is enabled, it's 0 by default
+      },
       fpsLimit: 120,
       interactivity: {
         events: {
@@ -95,7 +99,7 @@ function Particle() {
           id="tsparticles"
           particlesLoaded={particlesLoaded}
           options={options}
-          className="z-50 relative"
+          className="absolute w-full h-full"
         />
       )}
     </>

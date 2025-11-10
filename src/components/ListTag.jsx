@@ -2,7 +2,7 @@ function ListTag(props) {
   return (
     <>
       {props.tags && (
-        <ul className="flex justify-center gap-x-10 mt-5">
+        <ul className="flex flex-wrap justify-center gap-x-10 mt-5">
           {props.tags.map((tag, i) => (
             <li key={i} className="bg-blue-700 text-white py-1 px-4 rounded-full">
               {tag.name}
@@ -12,7 +12,7 @@ function ListTag(props) {
       )}
 
       {props.accesses && (
-        <ul className="flex justify-center gap-x-10 mt-5">
+        <ul className="flex flex-wrap gap-y-5 justify-center gap-x-10 mt-5">
           {props.accesses.url && (
             <li className="">
               <a

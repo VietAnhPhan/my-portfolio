@@ -7,7 +7,6 @@ import ListTag from "../ListTag";
 function Banner(props) {
   return (
     <>
-      <Particle />
       <div
         className={`${styles.banner} ${
           props.height == 80 ? styles.banner80Height : styles.banner100Height
@@ -17,6 +16,7 @@ function Banner(props) {
             : styles.aboutMeBg
         } ${props.isFixed && styles.fixedBannerImage}`}
       >
+        <Particle />
         {props.gradient && props.height == 100 && (
           <div className={styles.gradient}></div>
         )}
@@ -49,7 +49,7 @@ function Banner(props) {
           {props.description && <p className="pt-5">{props.description}</p>}
 
           {props.list && (
-            <ul className="lg:flex justify-center gap-x-10 pt-5">
+            <ul className="lg:flex flex flex-wrap justify-center gap-x-10 pt-5">
               {props.list.map((responsibility, i) => (
                 <li key={i} className="flex items-center gap-x-1">
                   <CheckCircleOutlineOutlinedIcon /> {responsibility}

@@ -35,7 +35,7 @@
   position: absolute;
   width: 100%;
   min-width: 320px;
-  height: 100vh;
+  height: 100%;
   background-image: linear-gradient(
     180deg,
     rgba(250, 183, 129, 0) 0,
@@ -48,7 +48,7 @@
   position: absolute;
   width: 100%;
   min-width: 320px;
-  height: 80vh;
+  height: 100%;
   background-image: linear-gradient(
     rgba(34, 34, 34, 0.2) 0,
     rgba(34, 34, 34, 0.6) 100%

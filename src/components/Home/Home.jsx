@@ -10,8 +10,9 @@ function Home(props) {
 
   return (
     <>
-     <Particle />
+     
       <div className={`${styles.background} flex items-end`}>
+        <Particle />
         <div className="container mx-auto lg:py-20">
           <div className="md:grid md:grid-cols-3 gap-x-20 ">
             <title>{`${props.sitename}`}</title>
@@ -27,8 +28,8 @@ function Home(props) {
                   {homeData.intro.title3}
                 </p>
 
-                <p className="lg:text-xl lg:mt-12">{homeData.intro.body}</p>
-                <div className="lg:mt-12 flex justify-end gap-x-3">
+                <p className="lg:text-xl lg:mt-6">{homeData.intro.body}</p>
+                <div className="lg:mt-12 flex justify-end gap-x-3 text-white">
                   <a href="https://www.linkedin.com/in/anhphanweb/">
                     <LinkedInIcon fontSize="large"></LinkedInIcon>
                   </a>
