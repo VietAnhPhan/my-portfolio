@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
-import Banner from "./Banner";
+import Banner from "./Banner/Banner";
 import contentStyle from "./../Content.module.css";
 
 function AboutMe() {

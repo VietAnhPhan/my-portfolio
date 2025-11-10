@@ -1,7 +1,7 @@
 import { homeData } from "../data/homeData";
 import { Link } from "react-router";
 import animation from "./../Animation.module.css";
-import WordBackground from "./WordBackground";
+import WordBackground from "./WordBackground/WordBackground";
 
 function FeatureProject(props) {
   return (

@@ -2,10 +2,10 @@ import Markdown from "react-markdown";
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import styles from "./../../Content.module.css";
-import Banner from "../Banner";
-import {projects} from "../../data/projectData";
-import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
-import WordBackground from "../WordBackground";
+import Banner from "../Banner/Banner";
+import { projects } from "../../data/projectData";
+import ArrowOutwardOutlinedIcon from "@mui/icons-material/ArrowOutwardOutlined";
+import WordBackground from "../WordBackground/WordBackground";
 
 function Project(prop) {
   const { project } = useParams();
@@ -45,14 +45,20 @@ function Project(prop) {
         background="portfolio"
         height={100}
         gradient={true}
-        accesses = {projectData.access}
+        accesses={projectData.access}
       ></Banner>
 
       <div className={`container max-w-2xl ${styles.content} my-8 sm:mt-20`}>
         <WordBackground word={projectData.name} />
         <Markdown>{markdownContent}</Markdown>
         <div className="text-center mt-5">
-          <a href={projectData.url} target="_blank" className="bg-blue-600 px-7 py-3 rounded-full text-white inline-flex mb-12 hover:bg-blue-300">Visit site <ArrowOutwardOutlinedIcon /></a>
+          <a
+            href={projectData.url}
+            target="_blank"
+            className="bg-blue-600 px-7 py-3 rounded-full text-white inline-flex mb-12 hover:bg-blue-300"
+          >
+            Visit site <ArrowOutwardOutlinedIcon />
+          </a>
         </div>
       </div>
     </>

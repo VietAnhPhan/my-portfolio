@@ -1,7 +1,7 @@
 import Container from "../../Container.module.css";
 // import styles from "../../Banner.module.css";
 import FeatureProject from "../FeatureProject";
-import Banner from "../Banner";
+import Banner from "../Banner/Banner";
 import { tags } from "../../data/projectData";
 // import bannerBackground from "/my-portfolio-banner.png";
 

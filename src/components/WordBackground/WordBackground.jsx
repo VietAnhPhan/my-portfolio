@@ -1,4 +1,4 @@
-import wordBackground from "./../wordBackground.module.css";
+import wordBackground from "./wordBackground.module.css";
 
 function WordBackground(props) {
   return (
