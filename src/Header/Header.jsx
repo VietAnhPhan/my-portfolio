@@ -15,7 +15,6 @@ const Header = () => {
 
   useEffect(() => {
     window.onclick = (e) => {
-      console.log(e.target.tagName);
       if (e.target.tagName !== "path" && e.target.tagName !== "svg") {
         smallScreenMenuItems.current.classList.add("hidden");
         header.current.classList.add("absolute");
@@ -24,7 +23,17 @@ const Header = () => {
         dropdownMenu.current.classList.add("text-white");
       }
     };
-  });
+
+    window.onscroll = () => {
+      const headerHeight = header.current.offsetHeight;
+      if (window.scrollY >= headerHeight) {
+        header.current.classList.add(styles.sticky);
+      }
+      else{
+        header.current.classList.remove(styles.sticky);
+      }
+    };
+  }, []);
 
   function handleClick() {
     if (smallScreenMenuItems.current.classList.contains("hidden")) {
@@ -48,7 +57,7 @@ const Header = () => {
       className="flex flex-col lg:justify-center absolute min-w-full z-10"
       ref={header}
     >
-      <div className="container mx-auto px-8 lg:px-24 pb-8 py-8">
+      <div className="container mx-auto lg:px-24">
         <ul className="flex justify-between items-center gap-20">
           <Link className="font-bold text-3xl" to="/">
             <img
@@ -60,7 +69,7 @@ const Header = () => {
           </Link>
 
           <div
-            className={`hidden lg:flex gap-x-10 lg:text-2xl text-white ${styles.fw300}`}
+            className={`hidden lg:flex gap-x-10 lg:text-2xl text-white bg-black rounded-full py-1 px-3 ${styles.fw300}`}
             ref={largeScreenMenuItems}
           >
             <Link to="/about-me">About me</Link>
