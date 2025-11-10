@@ -6,14 +6,14 @@ import WordBackground from "./WordBackground";
 function FeatureProject(props) {
   return (
     <>
-      <div className={`py-20 container`}>
+      <div className={`py-10 lg:py-20 container`}>
        <WordBackground word="Projects"/>
-        {props.title && <h2 className="text-5xl">{props.title}</h2>}
+        {props.title && <h2 className="text-4xl lg:text-5xl">{props.title}</h2>}
         {props.style === "3-cols" && (
-          <ul className="flex flex-col gap-y-10 lg:flex-row lg:gap-x-12 pt-20">
+          <ul className="flex flex-col gap-y-10 lg:flex-row lg:gap-x-12 pt-10 lg:pt-20">
             {homeData.projects.map((project, i) => (
-              <li key={i} className={`flex flex-col gap-y-3 ${animation.moveUp}`}>
-                <Link to={project.path}>
+              <li key={i} className={`${animation.moveUp} flex-1`}>
+                <Link to={project.path} className="flex flex-col gap-y-3 justify-between">
                   <div className="shadow-gray-300 shadow-xl rounded-xl border border-gray-300 border-b-0">
                     <img
                       className="rounded-xl w-full"

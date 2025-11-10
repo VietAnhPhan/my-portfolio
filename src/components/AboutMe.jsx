@@ -16,13 +16,14 @@ function AboutMe() {
     <>
       <Banner
         title="Viet Anh Phan"
-        description="FRONT-END DEVELOPER & BACK-END DEVELOPER"
+        color="white"
+        subtitle="SOFTWARE DEVELOPER"
         height={80}
         background="aboutme"
-        gradient={false}
+        gradient={true}
       ></Banner>
       <div className="container max-w-2xl py-20">
-        <h3 className="text-5xl shrink-0">About me</h3>
+        <h2 className="text-5xl shrink-0">About me</h2>
         <div className={contentStyle.content}>
           <Markdown>{content}</Markdown>
         </div>
