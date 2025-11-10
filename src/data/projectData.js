@@ -12,6 +12,11 @@ const projects = {
       "Heroku",
     ],
     url: "https://www.wecharge.com/app",
+    access: {
+      url: "https://www.wecharge.com/app",
+      fe: "",
+      be: "",
+    },
   },
   myinterests: {
     name: "Myinterests",
@@ -25,7 +30,12 @@ const projects = {
       "Postgres",
       "Github",
     ],
-    url: "https://myinterests2025.netlify.app/login",
+    url: "https://myinterests2025.netlify.app",
+    access: {
+      url: "https://myinterests2025.netlify.app",
+      fe: "https://github.com/VietAnhPhan/top-Myinterests-front-end",
+      be: "https://github.com/VietAnhPhan/top-Myinterests-back-end",
+    },
   },
   seakaren: {
     name: "Seakaren",
@@ -40,7 +50,18 @@ const projects = {
       "Heroku",
     ],
     url: "https://www.seakaren.com/en",
+    access: {
+      url: "https://www.seakaren.com/en",
+      fe: "",
+      be: "",
+    },
   },
 };
 
-export default projects;
+const tags = [
+  { name: "Myinterests", url: "" },
+  { name: "WeCharge", url: "" },
+  { name: "Seakaren", url: "" },
+];
+
+export { projects, tags };

@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import styles from "./../../Content.module.css";
 import Banner from "../Banner";
-import projects from "../../data/projectData";
+import {projects} from "../../data/projectData";
 import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
 import WordBackground from "../WordBackground";
 
@@ -45,6 +45,7 @@ function Project(prop) {
         background="portfolio"
         height={100}
         gradient={true}
+        accesses = {projectData.access}
       ></Banner>
 
       <div className={`container max-w-2xl ${styles.content} my-8 sm:mt-20`}>

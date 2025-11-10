@@ -2,6 +2,7 @@ import Container from "../../Container.module.css";
 // import styles from "../../Banner.module.css";
 import FeatureProject from "../FeatureProject";
 import Banner from "../Banner";
+import { tags } from "../../data/projectData";
 // import bannerBackground from "/my-portfolio-banner.png";
 
 function MyPortfolio() {
@@ -35,6 +36,7 @@ function MyPortfolio() {
         height={100}
         gradient={true}
         isFixed={true}
+        tags={tags}
       ></Banner>
 
       <FeatureProject style="2-cols"></FeatureProject>
