@@ -1,5 +1,4 @@
-.content h2,
-h3 {
+.content h2, .content h3 {
   font-weight: 500;
 }
 
@@ -13,7 +12,7 @@ li {
   font-weight: 300;
 }
 
-.content p, ul {
+.content p, .content ul {
   margin-top: calc(var(--spacing) * 6);
 }
 

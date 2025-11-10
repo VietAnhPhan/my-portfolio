@@ -47,11 +47,11 @@ function Project(prop) {
         gradient={true}
       ></Banner>
 
-      <div className={`mx-auto max-w-2xl ${styles.content} my-8 sm:mt-20`}>
+      <div className={`container max-w-2xl ${styles.content} my-8 sm:mt-20`}>
         <WordBackground word={projectData.name} />
         <Markdown>{markdownContent}</Markdown>
         <div className="text-center mt-5">
-          <a href={projectData.url} target="_blank" className="bg-blue-600 px-7 py-3 rounded-full text-white inline-flex mb-12">Visit site <ArrowOutwardOutlinedIcon /></a>
+          <a href={projectData.url} target="_blank" className="bg-blue-600 px-7 py-3 rounded-full text-white inline-flex mb-12 hover:bg-blue-300">Visit site <ArrowOutwardOutlinedIcon /></a>
         </div>
       </div>
     </>
