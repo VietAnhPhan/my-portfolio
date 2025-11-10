@@ -3,6 +3,7 @@ import CheckCircleOutlineOutlinedIcon from "@mui/icons-material/CheckCircleOutli
 import Particle from "../Particles";
 import animation from "./../../Animation.module.css";
 import ListTag from "../ListTag";
+import ScrollingArrow from "../utilities/ScrollingArrow";
 
 function Banner(props) {
   return (
@@ -58,6 +59,7 @@ function Banner(props) {
             </ul>
           )}
           <ListTag tags={props.tags} accesses={props.accesses} />
+          <ScrollingArrow />
         </div>
       </div>
       {/* <div
