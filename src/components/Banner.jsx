@@ -1,6 +1,7 @@
 import styles from "./../Banner.module.css";
 import CheckCircleOutlineOutlinedIcon from "@mui/icons-material/CheckCircleOutlineOutlined";
 import Particle from "./Particles";
+import animation from "./../Animation.module.css";
 
 function Banner(props) {
   return (
@@ -27,7 +28,7 @@ function Banner(props) {
           }`}
         >
           {/* Head text */}
-          <div className={styles.headText}>
+          <div className={`${styles.headText} ${animation.appearUp}`}>
             {props.title && (
               <h2
                 className={`text-4xl lg:text-6xl  font-semibold ${

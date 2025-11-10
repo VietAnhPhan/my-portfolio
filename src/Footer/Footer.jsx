@@ -24,10 +24,10 @@ function Footer() {
               <div className="">
                 <h3 className="text-2xl">Pages</h3>
                 <Link to="/about-me">
-                  <p className="text-lg mt-3">About me</p>
+                  <p className="text-lg mt-3 text-gray-400">About me</p>
                 </Link>
                 <Link to="my-portfolio">
-                  <p className="text-lg mt-3">My Portfolio</p>
+                  <p className="text-lg mt-3 text-gray-400">My Portfolio</p>
                 </Link>
               </div>
             </div>

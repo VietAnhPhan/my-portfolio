@@ -46,6 +46,7 @@ function FeatureProject(props) {
             ))}
           </ul>
         )}
+        <div className="text-right uppercase mt-5"><a className="text-right font-medium text-pink-600" href="/my-portfolio">See All Projects</a></div>
       </div>
     </>
   );
