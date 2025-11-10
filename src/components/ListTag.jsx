@@ -3,8 +3,8 @@ function ListTag(props) {
     <>
       {props.tags && (
         <ul className="flex justify-center gap-x-10 mt-5">
-          {props.tags.map((tag) => (
-            <li className="bg-blue-700 text-white py-1 px-4 rounded-full">
+          {props.tags.map((tag, i) => (
+            <li key={i} className="bg-blue-700 text-white py-1 px-4 rounded-full">
               {tag.name}
             </li>
           ))}

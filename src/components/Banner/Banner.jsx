@@ -25,11 +25,7 @@ function Banner(props) {
         )}
 
         {/* Head text */}
-        <div
-          className={`${
-            props.height == 80 ? styles.headText80 : styles.headText100
-          } ${animation.appearUp} container`}
-        >
+        <div className={`${styles.headText} ${animation.appearUp} container`}>
           {props.title && (
             <h2
               className={`text-4xl lg:text-6xl  font-semibold ${

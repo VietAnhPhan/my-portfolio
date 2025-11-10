@@ -2,7 +2,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 500px;
-  z-index: 99;
+  z-index: 10;
   position: relative;
   display: flex;
   justify-content: center;
@@ -20,15 +20,9 @@
   }
 }
 
-.headText100 {
+.headText {
   position: absolute;
   bottom: 120px;
-  text-align: center;
-}
-
-.headText80 {
-  position: absolute;
-  bottom: 250px;
   text-align: center;
 }
 

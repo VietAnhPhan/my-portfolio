@@ -95,6 +95,7 @@ function Particle() {
           id="tsparticles"
           particlesLoaded={particlesLoaded}
           options={options}
+          className="z-50 relative"
         />
       )}
     </>
