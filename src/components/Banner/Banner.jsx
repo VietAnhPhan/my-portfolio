@@ -1,6 +1,6 @@
 import styles from "./Banner.module.css";
 import CheckCircleOutlineOutlinedIcon from "@mui/icons-material/CheckCircleOutlineOutlined";
-import Particle from "../Particles";
+import Particle from "../utilities/Particles";
 import animation from "./../../Animation.module.css";
 import ListTag from "../ListTag";
 import ScrollingArrow from "../utilities/ScrollingArrow";

@@ -4,7 +4,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import FeatureProject from "../FeatureProject";
 import styles from "../../Hero.module.css";
 import animation from "../../Animation.module.css";
-import Particle from "../Particles";
+import Particle from "../utilities/Particles";
 
 function Home(props) {
 
