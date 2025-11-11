@@ -15,6 +15,7 @@ const projects = {
       "https://gsxytqtnlgirrrxhwjvr.supabase.co/storage/v1/object/public/media_materials/portfolio/WeCharge.png",
     url: "https://www.wecharge.com/app",
     pageUrl: "wecharge",
+    bannerUrl:"/banners/WeCharge.png",
     access: {
       url: "https://www.wecharge.com/app",
       fe: "",
@@ -37,6 +38,7 @@ const projects = {
       "https://gsxytqtnlgirrrxhwjvr.supabase.co/storage/v1/object/public/media_materials/portfolio/Myinterest.png",
     url: "https://myinterests2025.netlify.app",
     pageUrl: "myinterests",
+    bannerUrl:"/banners/Myinterests.png",
     access: {
       url: "https://myinterests2025.netlify.app",
       fe: "https://github.com/VietAnhPhan/top-Myinterests-front-end",
@@ -59,6 +61,7 @@ const projects = {
       "https://gsxytqtnlgirrrxhwjvr.supabase.co/storage/v1/object/public/media_materials/portfolio/SeaKaren.png",
     url: "https://www.seakaren.com/en",
     pageUrl: "seakaren",
+    bannerUrl:"/banners/SeaKaren.png",
     access: {
       url: "https://www.seakaren.com/en",
       fe: "",

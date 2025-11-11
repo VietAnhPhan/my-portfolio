@@ -11,11 +11,10 @@ function Banner(props) {
       <div
         className={`${styles.banner} ${
           props.height == 80 ? styles.banner80Height : styles.banner100Height
-        } ${
-          props.background == "portfolio"
-            ? styles.myPortfolioBg
-            : styles.aboutMeBg
-        } ${props.isFixed && styles.fixedBannerImage}`}
+        } ${props.background == "portfolio" && styles.myPortfolioBg}
+          ${props.background == "about-me" && styles.aboutMeBg}
+         ${props.isFixed && styles.fixedBannerImage}`}
+        style={{ backgroundImage: `url(${props.bannerUrl})` }}
       >
         <Particle />
         {props.gradient && props.height == 100 && (

@@ -19,8 +19,9 @@ function AboutMe() {
         color="white"
         subtitle="SOFTWARE DEVELOPER"
         height={80}
-        background="aboutme"
+        background="about-me"
         gradient={true}
+        bannerUrl={"/profile/vietanh-banner-sweater.png"}
       ></Banner>
       <div className="container max-w-2xl py-20">
         <h2 className="text-5xl shrink-0">About me</h2>

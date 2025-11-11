@@ -37,6 +37,7 @@ function MyPortfolio() {
         gradient={true}
         isFixed={true}
         tags={tags}
+        bannerUrl={"/banners/my-portfolio-banner.png"}
       ></Banner>
 
       <FeatureProject style="2-cols"></FeatureProject>

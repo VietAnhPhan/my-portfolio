@@ -42,10 +42,11 @@ function Project(prop) {
         title={projectData.name}
         subtitle={projectData.headline}
         list={projectData.responsibilities}
-        background="portfolio"
         height={100}
         gradient={true}
         accesses={projectData.access}
+        bannerUrl={projectData.bannerUrl}
+        isFixed={true}
       ></Banner>
 
       <div className={`container max-w-2xl ${styles.content} my-8 sm:mt-20`}>
