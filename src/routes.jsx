@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import AboutMe from "./components/AboutMe";
 import MyPortfolio from "./components/MyPortfolio/MyPortfolio";
 import Project from "./components/Project/Project";
+import MyResume from "./components/MyResume/MyResume";
 
 const sitename = "Viet Anh Developer";
 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             element: <Project sitename={sitename} />,
           },
         ],
+      },
+      {
+        path: "my-resume",
+        element: <MyResume />,
       },
     ],
   },

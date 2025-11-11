@@ -74,6 +74,7 @@ const Header = () => {
           >
             <Link to="/about-me">About me</Link>
             <Link to="/my-portfolio">My Portfolio</Link>
+            <Link to="/my-resume">My Resume</Link>
           </div>
 
           <div className="lg:hidden" onClick={handleClick} ref={dropdownMenu}>
