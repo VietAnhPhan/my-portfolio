@@ -22,8 +22,11 @@
 
 .headText {
   position: absolute;
-  bottom: 120px;
   text-align: center;
+  bottom: 0;
+  @media (width >64rem) {
+    bottom: 120px;
+  }
 }
 
 .heading1 {

@@ -1,7 +1,7 @@
 import styles from "./header.module.css";
 import { Link } from "react-router";
 import logoWhiteBG from "/logo/vietanh-logo-white-bg.png";
-import logoBlackBG from "/logo/vietanh-logo-black-bg.png";
+// import logoBlackBG from "/logo/vietanh-logo-black-bg.png";
 
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import { useEffect, useRef } from "react";
@@ -20,7 +20,7 @@ const Header = () => {
         header.current.classList.add("absolute");
         header.current.classList.remove("bg-[#1d1e21]");
         logo.current.src = logoWhiteBG;
-        dropdownMenu.current.classList.add("text-white");
+        dropdownMenu.current.classList.remove("text-white");
       }
     };
 
@@ -41,20 +41,22 @@ const Header = () => {
       smallScreenMenuItems.current.classList.add("flex");
       header.current.classList.remove("absolute");
       header.current.classList.add("bg-[#1d1e21]");
-      logo.current.src = logoBlackBG;
-      dropdownMenu.current.classList.add("text-white");
-    } else {
+      // logo.current.src = logoBlackBG;
+      // dropdownMenu.current.classList.add("text-white");
+    } 
+    
+    else {
       smallScreenMenuItems.current.classList.add("hidden");
       header.current.classList.add("absolute");
       header.current.classList.remove("bg-[#1d1e21]");
-      logo.current.src = logoWhiteBG;
-      dropdownMenu.current.classList.remove("text-white");
+      // logo.current.src = logoWhiteBG;
+      // dropdownMenu.current.classList.remove("text-white");
     }
   }
 
   return (
     <header
-      className="flex flex-col lg:justify-center absolute min-w-full z-100 py-8"
+      className="flex flex-col lg:justify-center absolute min-w-full z-100 py-8 bg-white lg:bg-transparent drop-shadow-lg lg:drop-shadow-none"
       ref={header}
     >
       <div className="container mx-auto lg:px-24">
@@ -77,7 +79,7 @@ const Header = () => {
             <Link to="/my-resume">My Resume</Link>
           </div>
 
-          <div className="lg:hidden" onClick={handleClick} ref={dropdownMenu}>
+          <div className="lg:hidden text-black" onClick={handleClick} ref={dropdownMenu}>
             <MenuOutlinedIcon />
           </div>
         </ul>
@@ -85,7 +87,7 @@ const Header = () => {
 
       {/* Mobile menu */}
       <div
-        className={`container hidden py-8 text-white ${styles.fw300} justify-center gap-x-10`}
+        className={`container hidden py-8 ${styles.fw300} justify-center gap-x-10`}
         ref={smallScreenMenuItems}
       >
         <Link to="/about-me">About me</Link>

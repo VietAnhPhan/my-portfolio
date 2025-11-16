@@ -5,6 +5,7 @@ import FeatureProject from "../FeatureProject";
 import styles from "../../Hero.module.css";
 import animation from "../../Animation.module.css";
 import Particle from "../utilities/Particles";
+import ScrollingArrow from "../utilities/ScrollingArrow";
 
 function Home(props) {
 
@@ -40,6 +41,7 @@ function Home(props) {
               </div>
             </div>
           </div>
+          <div className="text-center"><ScrollingArrow/></div>
         </div>
       </div>
 

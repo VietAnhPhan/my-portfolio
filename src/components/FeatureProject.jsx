@@ -56,10 +56,10 @@ function FeatureProject(props) {
                         </h3>
                       </Link>
                       <p className="text-xl">{projects[key].headline}</p>
-                      <ul className="text-xl flex flex-col gap-y-1 text-slate-500">
+                      <ul className="text-xl flex lg:flex-col gap-y-1 text-slate-500 flex-wrap gap-x-3">
                         {projects[key].responsibilities.map(
                           (responsiblity, i) => (
-                            <li key={i}>
+                            <li key={i} className="flex gap-x-3 items-center">
                               <CheckCircleOutlineOutlined /> {responsiblity}
                             </li>
                           )
@@ -76,7 +76,7 @@ function FeatureProject(props) {
                 )}
 
                 {i % 2 != 0 && (
-                  <li className="flex lg:flex-row sm:flex-col-reverse items-center gap-x-8 gap-y-3">
+                  <li className="flex flex-col flex-col-reverse lg:flex-row items-center gap-x-8 gap-y-3">
                     <div className="flex flex-col gap-y-6 text-right">
                       <Link to={`/my-portfolio/${projects[key].pageUrl}`}>
                         <h3 className="font-bold text-4xl pt-3">
@@ -84,10 +84,10 @@ function FeatureProject(props) {
                         </h3>
                       </Link>
                       <p className="text-xl">{projects[key].headline}</p>
-                      <ul className="text-xl flex flex-col gap-y-1 text-slate-500">
+                      <ul className="text-xl flex lg:flex-col gap-y-1 text-slate-500 flex-wrap gap-x-3">
                         {projects[key].responsibilities.map(
                           (responsiblity, i) => (
-                            <li key={i}>
+                            <li key={i} className="flex gap-x-3 items-center">
                               <CheckCircleOutlineOutlined /> {responsiblity}
                             </li>
                           )
