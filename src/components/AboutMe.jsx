@@ -1,16 +1,20 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Markdown from "react-markdown";
 import Banner from "./Banner/Banner";
 import contentStyle from "./../Content.module.css";
+import { HeaderContext } from "../Context";
 
 function AboutMe() {
   const [content, setContent] = useState("");
+  const headerContext = useContext(HeaderContext);
 
   useEffect(() => {
     fetch("/aboutMe.md")
       .then((response) => response.text())
       .then((content) => setContent(content));
-  });
+
+    headerContext.setMenuItemActive("about-me");
+  },[]);
 
   return (
     <>

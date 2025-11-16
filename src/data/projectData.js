@@ -1,9 +1,9 @@
 const projects = {
   wecharge: {
     name: "WeCharge",
-    headline: "Electric Vehicle charging management system",
+    headline: "Web-based Electric Vehicle charging management system",
     responsibilities: [
-      "Restful API",
+      "Restful APIs",
       "Testing",
       "Refactor code",
       "Github",
@@ -27,12 +27,15 @@ const projects = {
     headline:
       "A web-based social platform designed to help users share their interests and discover others with similar passions",
     responsibilities: [
-      "Restful API",
+      "Restful APIs",
       "React",
       "Express",
       "NodeJS",
       "Postgres",
       "Github",
+      "Render",
+      "Neon",
+      "Supabase"
     ],
     thumbnail:
       "https://gsxytqtnlgirrrxhwjvr.supabase.co/storage/v1/object/public/media_materials/portfolio/Myinterest.png",
@@ -47,9 +50,9 @@ const projects = {
   },
   seakaren: {
     name: "Seakaren",
-    headline: "Setouchi Water Taxi Booking App",
+    headline: "Setouchi Water Taxi Booking Mobile App",
     responsibilities: [
-      "Developer Restful API",
+      "Restful APIs",
       "Testing",
       "Refactor code",
       "Github",

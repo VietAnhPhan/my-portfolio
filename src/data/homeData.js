@@ -1,7 +1,7 @@
 const homeData = {
   intro: {
     title1: "I am Viet Anh",
-    title2: "a junior software developer",
+    title2: "a junior web developer",
     title3: "from Viet Nam.",
     body: "I build web apps with React, Express, NodeJS, Postgres and TailwindCSS.",
   },

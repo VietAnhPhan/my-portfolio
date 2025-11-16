@@ -3,9 +3,17 @@ import Container from "../../Container.module.css";
 import FeatureProject from "../FeatureProject";
 import Banner from "../Banner/Banner";
 import { tags } from "../../data/projectData";
+import { useContext, useEffect } from "react";
+import { HeaderContext } from "../../Context";
 // import bannerBackground from "/my-portfolio-banner.png";
 
 function MyPortfolio() {
+  const headerContext = useContext(HeaderContext);
+
+  useEffect(() => {
+    headerContext.setMenuItemActive("my-portfolio");
+  }, []);
+  
   return (
     <>
       {/* <div

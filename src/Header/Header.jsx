@@ -4,7 +4,8 @@ import logoWhiteBG from "/logo/vietanh-logo-white-bg.png";
 // import logoBlackBG from "/logo/vietanh-logo-black-bg.png";
 
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
+import { HeaderContext } from "../Context";
 
 const Header = () => {
   const largeScreenMenuItems = useRef("");
@@ -12,6 +13,7 @@ const Header = () => {
   const header = useRef(null);
   const logo = useRef(null);
   const dropdownMenu = useRef(null);
+  const headerContext = useContext(HeaderContext);
 
   useEffect(() => {
     window.onclick = (e) => {
@@ -28,8 +30,7 @@ const Header = () => {
       const headerHeight = header.current.offsetHeight;
       if (window.scrollY >= headerHeight) {
         header.current.classList.add(styles.sticky);
-      }
-      else{
+      } else {
         header.current.classList.remove(styles.sticky);
       }
     };
@@ -43,15 +44,17 @@ const Header = () => {
       header.current.classList.add("bg-[#1d1e21]");
       // logo.current.src = logoBlackBG;
       // dropdownMenu.current.classList.add("text-white");
-    } 
-    
-    else {
+    } else {
       smallScreenMenuItems.current.classList.add("hidden");
       header.current.classList.add("absolute");
       header.current.classList.remove("bg-[#1d1e21]");
       // logo.current.src = logoWhiteBG;
       // dropdownMenu.current.classList.remove("text-white");
     }
+  }
+
+  function handleHomeClick() {
+    headerContext.setMenuItemActive("");
   }
 
   return (
@@ -61,7 +64,7 @@ const Header = () => {
     >
       <div className="container mx-auto lg:px-24">
         <ul className="flex justify-between items-center gap-20">
-          <Link className="font-bold text-3xl" to="/">
+          <Link className="font-bold text-3xl" to="/" onClick={handleHomeClick}>
             <img
               src={logoWhiteBG}
               alt="Viet Anh logo"
@@ -74,12 +77,39 @@ const Header = () => {
             className={`hidden lg:flex gap-x-10 lg:text-2xl text-white bg-black rounded-full py-1 px-3 ${styles.fw300}`}
             ref={largeScreenMenuItems}
           >
-            <Link to="/about-me">About me</Link>
-            <Link to="/my-portfolio">My Portfolio</Link>
-            <Link to="/my-resume">My Resume</Link>
+            <Link
+              to="/about-me"
+              className={`hover:text-indigo-400 ${
+                headerContext.menuItemActive === "about-me" && "text-indigo-400"
+              }`}
+            >
+              About me
+            </Link>
+            <Link
+              to="/my-portfolio"
+              className={`hover:text-indigo-400 ${
+                headerContext.menuItemActive === "my-portfolio" &&
+                "text-indigo-400"
+              }`}
+            >
+              My Portfolio
+            </Link>
+            <Link
+              to="/my-resume"
+              className={`hover:text-indigo-400 ${
+                headerContext.menuItemActive === "my-resume" &&
+                "text-indigo-400"
+              }`}
+            >
+              My Resume
+            </Link>
           </div>
 
-          <div className="lg:hidden text-black" onClick={handleClick} ref={dropdownMenu}>
+          <div
+            className="lg:hidden text-black"
+            onClick={handleClick}
+            ref={dropdownMenu}
+          >
             <MenuOutlinedIcon />
           </div>
         </ul>
