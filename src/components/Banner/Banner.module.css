@@ -23,7 +23,7 @@
 .headText {
   position: absolute;
   text-align: center;
-  bottom: 0;
+  bottom: 56px;
   @media (width >64rem) {
     bottom: 120px;
   }

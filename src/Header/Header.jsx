@@ -120,8 +120,30 @@ const Header = () => {
         className={`container hidden py-8 ${styles.fw300} justify-center gap-x-10`}
         ref={smallScreenMenuItems}
       >
-        <Link to="/about-me">About me</Link>
-        <Link to="/my-portfolio">My Portfolio</Link>
+        <Link
+          className={`hover:text-indigo-400 ${
+            headerContext.menuItemActive === "about-me" && "text-indigo-400"
+          }`}
+          to="/about-me"
+        >
+          About me
+        </Link>
+        <Link
+          className={`hover:text-indigo-400 ${
+            headerContext.menuItemActive === "my-portfolio" && "text-indigo-400"
+          }`}
+          to="/my-portfolio"
+        >
+          My Portfolio
+        </Link>
+        <Link
+          to="/my-resume"
+          className={`hover:text-indigo-400 ${
+            headerContext.menuItemActive === "my-resume" && "text-indigo-400"
+          }`}
+        >
+          My Resume
+        </Link>
       </div>
     </header>
   );
