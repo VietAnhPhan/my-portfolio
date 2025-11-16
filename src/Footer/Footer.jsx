@@ -29,6 +29,9 @@ function Footer() {
                 <Link to="my-portfolio">
                   <p className="text-lg mt-3 text-gray-400">My Portfolio</p>
                 </Link>
+                 <Link to="my-resume">
+                  <p className="text-lg mt-3 text-gray-400">My Resume</p>
+                </Link>
               </div>
             </div>
           </div>

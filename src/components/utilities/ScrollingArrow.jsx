@@ -1,4 +1,5 @@
-import SouthIcon from '@mui/icons-material/South';import styles from "./scrollingArrow.module.css";
+import SouthIcon from "@mui/icons-material/South";
+import styles from "./scrollingArrow.module.css";
 
 function ScrollingArrow() {
   function handleClick() {

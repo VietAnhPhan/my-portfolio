@@ -16,7 +16,7 @@
 
 @layer utilities {
   .container {
-    margin: 0 auto;
+    margin-inline: auto;
     position: relative;
 
     padding-inline: calc(var(--spacing) * 8);

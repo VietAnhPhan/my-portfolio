@@ -13,26 +13,36 @@ function FeatureProject(props) {
         <WordBackground word="Projects" />
         {props.title && <h2 className="text-4xl lg:text-5xl">{props.title}</h2>}
         {props.style === "3-cols" && (
-          <ul className="flex flex-col gap-y-10 lg:flex-row lg:gap-x-12 pt-10 lg:pt-20">
-            {homeData.projects.map((project, i) => (
-              <li key={i} className={`${animation.moveUp} flex-1`}>
-                <Link
-                  to={project.path}
-                  className="flex flex-col gap-y-3 justify-between"
-                >
-                  <div className="shadow-gray-300 shadow-xl rounded-xl border border-gray-300 border-b-0">
-                    <img
-                      className="rounded-xl w-full"
-                      src={project.thumbnail}
-                      alt={`${project.title} + thumbnail`}
-                    />
-                  </div>
-                  <h3 className="font-bold text-2xl pt-8">{project.title}</h3>
-                  <p className="text-lg">{project.description}</p>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <>
+            <ul className="flex flex-col gap-y-10 lg:flex-row lg:gap-x-12 pt-10 lg:pt-20">
+              {homeData.projects.map((project, i) => (
+                <li key={i} className={`${animation.moveUp} flex-1`}>
+                  <Link
+                    to={project.path}
+                    className="flex flex-col gap-y-3 justify-between"
+                  >
+                    <div className="shadow-gray-300 shadow-xl rounded-xl border border-gray-300 border-b-0">
+                      <img
+                        className="rounded-xl w-full"
+                        src={project.thumbnail}
+                        alt={`${project.title} + thumbnail`}
+                      />
+                    </div>
+                    <h3 className="font-bold text-2xl pt-8">{project.title}</h3>
+                    <p className="text-lg">{project.description}</p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div className="text-right uppercase mt-5">
+              <Link to="/my-portfolio"
+                className="text-right font-medium text-pink-600"
+             
+              >
+                See All Projects
+              </Link>
+            </div>
+          </>
         )}
         {props.style === "2-cols" && (
           <ul className="grid grid-cols-1 gap-x-12 gap-y-12 pt-20">
@@ -117,14 +127,6 @@ function FeatureProject(props) {
             ))}
           </ul>
         )}
-        <div className="text-right uppercase mt-5">
-          <a
-            className="text-right font-medium text-pink-600"
-            href="/my-portfolio"
-          >
-            See All Projects
-          </a>
-        </div>
       </div>
     </>
   );

@@ -59,7 +59,7 @@ const Header = () => {
 
   return (
     <header
-      className="flex flex-col lg:justify-center absolute min-w-full z-100 py-8 bg-white lg:bg-transparent drop-shadow-lg lg:drop-shadow-none"
+      className="flex flex-col lg:justify-center absolute min-w-full z-100 py-2 lg:py-8 bg-white lg:bg-transparent drop-shadow-lg lg:drop-shadow-none"
       ref={header}
     >
       <div className="container mx-auto lg:px-24">
