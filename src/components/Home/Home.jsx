@@ -6,15 +6,16 @@ import styles from "../../Hero.module.css";
 import animation from "../../Animation.module.css";
 import Particle from "../utilities/Particles";
 import ScrollingArrow from "../utilities/ScrollingArrow";
+import useTitle from "../../hooks/useTitle";
 
-function Home(props) {
+function Home() {
+  useTitle("Home");
   return (
     <>
       <div className={`${styles.background} flex items-end`}>
         <Particle />
         <div className="container mx-auto lg:py-20 mb-9 lg:mb-0">
           <div className="md:grid md:grid-cols-3 gap-x-20 ">
-            <title>{`${props.sitename}`}</title>
             <div className="col-span-2 flex items-end">
               <div
                 className={`flex flex-col text-left lg:text-right ${animation.appearUp}`}
@@ -29,7 +30,9 @@ function Home(props) {
                 <p className="lg:text-5xl text-white font-light">
                   {homeData.intro.title3}
                 </p>
-                <p className="lg:text-xl lg:mt-6 text-white">{homeData.intro.body}</p>
+                <p className="lg:text-xl lg:mt-6 text-white">
+                  {homeData.intro.body}
+                </p>
 
                 {/* Icons */}
                 <div className="lg:mt-12 flex justify-end gap-x-3 text-white">

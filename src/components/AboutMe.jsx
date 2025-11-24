@@ -3,8 +3,10 @@ import Markdown from "react-markdown";
 import Banner from "./Banner/Banner";
 import contentStyle from "./../Content.module.css";
 import { HeaderContext } from "../Context";
+import useTitle from "../hooks/useTitle";
 
 function AboutMe() {
+  useTitle("About");
   const [content, setContent] = useState("");
   const headerContext = useContext(HeaderContext);
 
@@ -14,7 +16,7 @@ function AboutMe() {
       .then((content) => setContent(content));
 
     headerContext.setMenuItemActive("about-me");
-  },[]);
+  }, []);
 
   return (
     <>

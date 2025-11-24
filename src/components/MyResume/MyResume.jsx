@@ -3,8 +3,10 @@ import Markdown from "react-markdown";
 import Banner from "../Banner/Banner";
 import contentStyle from "./../../Content.module.css";
 import { HeaderContext } from "../../Context";
+import useTitle from "../../hooks/useTitle";
 
 function MyResume() {
+  useTitle("Resume");
   const [content, setContent] = useState("");
   const headerContext = useContext(HeaderContext);
 
