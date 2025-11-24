@@ -17,7 +17,7 @@ function ListTag(props) {
             <li className="">
               <a
                 href={props.accesses.url}
-                className="hover:bg-amber-50 bg-blue-700  text-white py-1 px-4 rounded-full"
+                className="hover:bg-blue-500 bg-blue-700  text-white py-1 px-4 rounded-full"
                 target="_blank"
               >
                 Visit site
@@ -29,7 +29,7 @@ function ListTag(props) {
             <li className="">
               <a
                 href={props.accesses.fe}
-                className="hover:bg-amber-50 bg-blue-700 text-white py-1 px-4 rounded-full"
+                className="hover:bg-blue-500 bg-blue-700 text-white py-1 px-4 rounded-full"
                 target="_blank"
               >
                 Front-end code
@@ -41,7 +41,7 @@ function ListTag(props) {
             <li className="">
               <a
                 href={props.accesses.be}
-                className="hover:bg-amber-50 bg-blue-700 text-white py-1 px-4 rounded-full"
+                className="hover:bg-blue-500 bg-blue-700 text-white py-1 px-4 rounded-full"
                 target="_blank"
               >
                 Back-end code

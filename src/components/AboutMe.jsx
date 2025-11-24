@@ -23,7 +23,7 @@ function AboutMe() {
       <Banner
         title="Viet Anh Phan"
         color="white"
-        subtitle="SOFTWARE DEVELOPER (FRONT-END AND BACK-END DEVELOPER)"
+        subtitle="FULL-STACK DEVELOPER (FRONT-END AND BACK-END DEVELOPER)"
         height={80}
         background="about-me"
         gradient={true}

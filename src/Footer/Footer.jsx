@@ -17,20 +17,20 @@ function Footer() {
                     className={styles.logoImg}
                   />
                 </a>
-                <p className="text-xl mt-3">
+                <p className="mt-3">
                   A full-stack web developer from South of Vietnam.
                 </p>
               </div>
               <div className="">
                 <h3 className="text-2xl">Pages</h3>
                 <Link to="/about-me">
-                  <p className="text-lg mt-3 text-gray-400">About me</p>
+                  <p className="mt-3 text-gray-400">About me</p>
                 </Link>
                 <Link to="my-portfolio">
-                  <p className="text-lg mt-3 text-gray-400">My Portfolio</p>
+                  <p className="mt-3 text-gray-400">My Portfolio</p>
                 </Link>
                  <Link to="my-resume">
-                  <p className="text-lg mt-3 text-gray-400">My Resume</p>
+                  <p className="mt-3 text-gray-400">My Resume</p>
                 </Link>
               </div>
             </div>

@@ -1,8 +1,8 @@
 
 ![My profile picture](/profile/vietanh-resume-profile.png)
 ## Viet Anh Phan
-### Web Developer (Front-end and Back-end developer)
-Seeking a challenging software developer position to leverage my technical expertise and contribute to dynamic team projects. I hold a degree in Computing (Information Systems) from the National University of Vietnam and have 2 years of hands-on experience in web development. Demonstrated technical expertise with **React, Express (NodeJS), Laravel (PHP), Postgres database, JWT Auth, OAuth, WordPress (CMS), as well as Heroku and Supabase cloud services**.
+### Full-stack Developer (Front-end and Back-end developer)
+Seeking a challenging Full-stack position to leverage my technical expertise and contribute to dynamic team projects. I hold a degree in Computing (Information Systems) from the National University of Vietnam and have 2 years of hands-on experience in web development. Demonstrated technical expertise with **React, Express (NodeJS), Laravel (PHP), Postgres database, JWT Auth, OAuth, WordPress (CMS), as well as Heroku and Supabase cloud services**.
 
 - Address: Bien Hoa, Dong Nai, Vietnam / [Portfolio](https://vietanhdeveloper.netlify.app/ "Portfolio") - [Github](https://github.com/vietAnhPhan/ "Github") - [Linkedin](https://www.linkedin.com/in/anhphanweb/)
 

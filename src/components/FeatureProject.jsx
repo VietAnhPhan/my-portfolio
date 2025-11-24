@@ -29,7 +29,7 @@ function FeatureProject(props) {
                       />
                     </div>
                     <h3 className="font-bold text-2xl pt-8">{project.title}</h3>
-                    <p className="text-lg">{project.description}</p>
+                    <p>{project.description}</p>
                   </Link>
                 </li>
               ))}
@@ -65,8 +65,8 @@ function FeatureProject(props) {
                           {projects[key].name}
                         </h3>
                       </Link>
-                      <p className="text-xl">{projects[key].headline}</p>
-                      <ul className="text-xl flex lg:flex-col gap-y-1 text-slate-500 flex-wrap gap-x-3">
+                      <p>{projects[key].headline}</p>
+                      <ul className="flex lg:flex-col gap-y-1 text-slate-500 flex-wrap gap-x-3">
                         {projects[key].responsibilities.map(
                           (responsiblity, i) => (
                             <li key={i} className="flex gap-x-3 items-center">
@@ -93,8 +93,8 @@ function FeatureProject(props) {
                           {projects[key].name}
                         </h3>
                       </Link>
-                      <p className="text-xl">{projects[key].headline}</p>
-                      <ul className="text-xl flex lg:flex-col gap-y-1 text-slate-500 flex-wrap gap-x-3">
+                      <p>{projects[key].headline}</p>
+                      <ul className="flex lg:flex-col gap-y-1 text-slate-500 flex-wrap gap-x-3">
                         {projects[key].responsibilities.map(
                           (responsiblity, i) => (
                             <li key={i} className="flex gap-x-3 items-center">
