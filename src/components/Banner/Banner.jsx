@@ -58,7 +58,7 @@ function Banner(props) {
             </ul>
           )}
           <ListTag tags={props.tags} accesses={props.accesses} />
-          <ScrollingArrow />
+          {/* <ScrollingArrow /> */}
         </div>
       </div>
       {/* <div
