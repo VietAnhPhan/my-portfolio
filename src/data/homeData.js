@@ -3,7 +3,7 @@ const homeData = {
     title1: "I am Viet Anh",
     title2: "a junior Full-stack developer",
     title3: "from Viet Nam.",
-    body: "I build web apps with React, Express, NodeJS, Postgres and TailwindCSS.",
+    body: "I build web apps with React, Express, NodeJS, Laravel (PHP), Postgres and TailwindCSS.",
   },
   projects: [
     {
