@@ -30,8 +30,14 @@ const Header = () => {
       const headerHeight = header.current.offsetHeight;
       if (window.scrollY >= headerHeight) {
         header.current.classList.add(styles.sticky);
+        header.current.classList.add(styles.stickyBG);
+        header.current.classList.add("drop-shadow-lg");
+        
+
       } else {
         header.current.classList.remove(styles.sticky);
+        header.current.classList.remove(styles.stickyBG);
+        header.current.classList.remove("drop-shadow-lg");
       }
     };
   }, []);
@@ -59,7 +65,7 @@ const Header = () => {
 
   return (
     <header
-      className="flex flex-col lg:justify-center absolute min-w-full z-100 py-2 lg:py-8 bg-white lg:bg-transparent drop-shadow-lg lg:drop-shadow-none"
+      className="flex flex-col lg:justify-center absolute min-w-full z-100 py-2 bg-white lg:bg-transparent"
       ref={header}
     >
       <div className="container mx-auto lg:px-24">
@@ -74,7 +80,7 @@ const Header = () => {
           </Link>
 
           <div
-            className={`hidden lg:flex gap-x-10 lg:text-2xl text-white bg-black rounded-full py-1 px-3 ${styles.fw300}`}
+            className={`hidden lg:flex gap-x-10 lg:text-xl text-white bg-black rounded-full py-1 px-3 ${styles.fw300}`}
             ref={largeScreenMenuItems}
           >
             <Link

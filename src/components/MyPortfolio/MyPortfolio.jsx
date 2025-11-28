@@ -39,9 +39,9 @@ function MyPortfolio() {
       <Banner
         title="Latest Projects"
         subtitle="Here are some of the things I've been working on."
-        description="Here is where I keep track of all the things I've been doing over
-            the years, whether it's new businesses I've been building out,
-            client projects or just experiments."
+        // description="Here is where I keep track of all the things I've been doing over
+        //     the years, whether it's new businesses I've been building out,
+        //     client projects or just experiments."
         background="portfolio"
         height={100}
         gradient={true}
