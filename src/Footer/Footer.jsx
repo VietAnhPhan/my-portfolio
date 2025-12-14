@@ -18,7 +18,7 @@ function Footer() {
                   />
                 </a>
                 <p className="mt-3">
-                  A full-stack web developer from South of Vietnam.
+                  {/* A full-stack web developer from South of Vietnam. */}
                 </p>
               </div>
               <div className="">

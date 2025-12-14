@@ -1,8 +1,8 @@
 const homeData = {
   intro: {
     title1: "I am Viet Anh",
-    title2: "a junior Full-stack developer",
-    title3: "from Viet Nam.",
+    title2: "a Backend developer",
+    title3: "",
     body: "I build web apps with React, Express, NodeJS, Laravel (PHP), Postgres and TailwindCSS.",
   },
   projects: [
