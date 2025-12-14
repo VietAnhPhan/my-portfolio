@@ -27,7 +27,7 @@ function AboutMe() {
         height={80}
         background="about-me"
         gradient={true}
-        bannerUrl={"/profile/vietanh-banner-sweater.png"}
+        // bannerUrl={"/profile/vietanh-banner-sweater.png"}
       ></Banner>
       <div className="container max-w-2xl py-20">
         <h2 className="text-5xl mb-6">About me</h2>
